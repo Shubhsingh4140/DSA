@@ -19,7 +19,6 @@ void dfs(int st,vector<vector<int>> &adj,vector<int> &vis,vector<int> &res){
 vector<int> dfsCall(int V,vector<vector<int>> &adj,int st){
     vector<int> res;
     vector<int> vis(V,0);
-      vis[st]=1;
    dfs(st,adj,vis,res);
     return res;
     
