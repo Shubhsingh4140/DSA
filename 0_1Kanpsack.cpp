@@ -9,7 +9,7 @@ int knapsack01(int n, int W, vector<int>& weights,vector<int>& values){
     for(int i=1;i<n+1;i++){
         for(int j=1;j<W+1;j++){
             if(weights[i-1]<=j){
-                t[i][j]=max(values[i-1]+t[i-1][j-weights[i-1]],
+                t[i][j]=max(values[i-1]+t[i-1][j-weights[i-1]],   //UnBounded Kanpsack  t[i][j]=max(values[i-1]+t[i][j-weights[i-1]],  t[i-1][j]);
                 t[i-1][j]);
                 
                 
