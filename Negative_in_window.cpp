@@ -7,8 +7,8 @@ int main() {
     vector<int> v = {12, -1, -7, 8, -15, 30, 16, 28};
     int k = 3;
     int i = 0, j = 0;
-    list<int> ls;        // to keep track of negative numbers
-    vector<int> answ;    // to store result
+    list<int> ls;        
+    vector<int> answ;    
 
     while (j < v.size()) {
         if (v[j] < 0) {
@@ -24,7 +24,7 @@ int main() {
             } else {
                 answ.push_back(ls.front());
                 if (v[i] == ls.front()) {
-                    ls.pop_front();  // ✅ fix: check v[i], not v[j]
+                    ls.pop_front();  //
                 }
             }
             i++;
